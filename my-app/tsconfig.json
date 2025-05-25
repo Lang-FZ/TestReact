@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,   // 不需要显式地声明变量的类型Any
+    "target": "ESNext",
+    "lib": [
+      "DOM", 
+      "DOM.Iterable", 
+      "ESNext"
+    ],
+    "allowJs": true,          // 允许混合编译JS文件
+    "module": "ESNext",
+    "strict": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,  // 编译器将每个文件作为单独的模块来使用
+    "noEmit": true,           // 发生错误的时候，编译器不要生成JS代码
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
