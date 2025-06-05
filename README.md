@@ -1,4 +1,4 @@
 # TestReact
 
-#### Demo1: my-app
-#### Demo2: travel
+#### Demo 1: my-app
+#### Demo 2: travel
